@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.partners {
+    height: 200px;
+    margin-top: 976px;
+    
+    display: flex;
+    padding: 0px, 171.15px, 0px, 171px;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(247, 247, 247, 1);
+  
+}
+
+.partners img {
+    width: 150px;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+}

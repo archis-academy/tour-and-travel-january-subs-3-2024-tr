@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+.list-item:nth-child(2){
+    margin: 40px 0 40px 0;
+}
+.value {
+    width: 50px;
+    margin-right: 10px;
+}
+.text {
+    width: 300px;
+}
+.get-h1 {
+    font-size: 40px;
+    width: 350px;
+    margin-bottom: 20px;
+    font-weight:bold
+}
+.fav-res{
+    display: flex;
+}
+.bookings{
+    margin-left: 200px;
+    height: 400px;
+    
+}
+.book-trip{
+    width: 600px;
+    height: 400px;
+    margin-left: 300px;
+}
+article {
+    border-bottom: 3px solid red;
+    margin-top: 2822px;
+    height: 600px;
+}
+@media screen and (max-width:375px) {
+    .book-trip{
+        display:none;
+    }
+}

@@ -1,20 +1,13 @@
-* {
-    box-sizing: border-box;
-}
-
 .partners {
-    height: 200px;
-    margin-top: 976px;
-    
+    padding: 20px 0;
     display: flex;
-    padding: 0px, 171.15px, 0px, 171px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 150px;
     align-items: center;
-    background-color:rgba(247, 247, 247, 1);
-  
+    flex-wrap: wrap;
 }
 
-.partners img {
+.partners-section img {
     width: 150px;
     filter: grayscale(100%);
     mix-blend-mode: multiply;

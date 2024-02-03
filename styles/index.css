@@ -1,6 +1,5 @@
 *{
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Poppins', sans-serif;
 }
 
 .caption-h3 {
@@ -9,7 +8,8 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    color: orange;
+    color:rgba(223, 105, 81, 1);
+
 }
 .caption-h1 {
     display: flex;
@@ -19,7 +19,7 @@
     margin-top: 50px;
 }
 
-.deste {
+.stack {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,17 +28,11 @@
 
 }
 
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    height: 200px;
+.stack-card {
     width: 250px;
-  
+    text-align: center;
 }
-.s1 {
+.card-img {
     width: 80px;
     height: 80px;
     margin-left: auto;
@@ -46,32 +40,27 @@
     margin-top: 20px;
     
 }
-.card p {
+.stack-card p {
     margin: 20px 10px 10px 20px;
     width: 75%;
 }
 
-.card h3 {
+.stack-card h3 {
     margin: 10px 5px 0 5px;
 }
-.card h4 {
+.stack-card h4 {
     margin: 10px 0 -5px 0;
 }
- .deste .card:nth-child(2){
+ .stack .stack-card:nth-child(2){
     box-shadow: -6px 5px 18px rgba(0, 0, 0, 0.1);
     border-radius: 25px;
  }
 
- article {
-    height: 480px;
-    margin-top: 1286px;
- }
-
  @media screen and (max-width:800px){
-    .deste {
+    .stack {
         display: grid;
     }
-    .card {
+    .stack-card {
         margin-top: 25px;
     }
  }

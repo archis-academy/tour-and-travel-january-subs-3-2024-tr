@@ -1,17 +1,10 @@
-* {
-    box-sizing: border-box;
-}
-
-.partners {
-    height: 200px;
-    margin-top: 976px;
-    
+.partners-section {
+    padding: 20px 0;
     display: flex;
-    padding: 0px, 171.15px, 0px, 171px;
-    justify-content: space-around;
-    align-items: center;
-    background-color:rgba(247, 247, 247, 1);
-  
+    justify-content: center;
+    gap: 150px;
+    flex-wrap:wrap ;
+    align-items: center; 
 }
 
 .partners img {

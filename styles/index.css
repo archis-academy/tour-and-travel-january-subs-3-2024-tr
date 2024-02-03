@@ -1,0 +1,14 @@
+.partners-section {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap:wrap ;
+    align-items: center; 
+}
+
+.partners img {
+    width: 150px;
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+}

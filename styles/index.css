@@ -1,0 +1,83 @@
+.Packages {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+.Trending-title {
+    text-align: center;
+    gap: 20px;
+    padding: 50px 0;
+    
+}
+
+#title-h4 {
+    color: rgba(223, 105, 81, 1);
+    font-family: 'Poppins', sans-serif;
+}
+
+#title-h1 {
+    font-family: 'Volkhov', serif;
+}
+.group1 {
+    display: grid;
+    max-width: min-content;
+}
+#swiss-flag {
+    position: absolute;
+    margin-top:260px;
+}
+.swis-caption {
+    align-items: center;
+    gap: 70px;
+    padding: 40px 10px 0 10px;
+}
+#country{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Volkhov', serif;
+}
+.swis-caption, #visitor-div {
+    color: rgba(125, 125, 125, 1);
+}
+.tour-info{
+    display: grid;
+    width: fit-content;
+    padding: 10px 0 0 10px;
+}
+.packages-local{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgba(125, 125, 125, 1);
+}
+.tour-price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.price-line {
+    position: relative;
+    rotate: 90deg;
+    margin-left: -60px;
+    width: 5px;  
+}
+.tour-explanation{
+    padding: 0 15px 0 15px; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 12px;
+}
+.search-button{
+    padding: 20px;
+    background-color: rgba(223, 105, 81, 1);
+    width: fit-content;
+    border-radius: 20px;
+    margin: 10px 0 0 10px;
+    font-family: 'Poppins', sans-serif;
+}

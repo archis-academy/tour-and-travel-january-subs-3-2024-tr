@@ -1,0 +1,45 @@
+.explore-section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.explore-img{
+    width: 1240px;
+    height: 499px;
+}
+
+.nature,
+.cities{
+    position: relative;
+}
+
+.promotion-texts{
+    position: absolute;
+    top: 33%;
+    left: 34%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+}
+
+.promotion-texts h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.promotion-texts h3{
+    font-size: 18px;
+    color: #FFEFEC;
+}
+
+.promotion-button{
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}

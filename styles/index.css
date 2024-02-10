@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    max-width: 1210px;
     margin: auto;
     padding: 30px 0px;
 }
@@ -75,7 +75,7 @@
 }
 
 .home-main-section{
-    width: 60%;
+    max-width: 1200px;
     margin: 150px auto;
     display: flex;
     flex-direction: column;
@@ -87,9 +87,9 @@
     font-family: Poppins;
     font-size: 58.506px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 67.908px;
-    width: 70%;
+    font-weight: 700px;
+    line-height: 85px;
+    max-width: 780px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -99,7 +99,7 @@
     background-color: rgba(243, 243, 243, 0.60);
     backdrop-filter: blur(17.760618209838867px);
     border-radius: 5.224px;
-    width: 65%;
+    max-width: 844px;
     display: flex;
     padding: 20px 15px;
     justify-content: space-evenly;
@@ -111,6 +111,29 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.main-menu-input{
+    background-color: transparent;
+    padding: 20px 15px;
+    border: none;
+    height: 20px;
+    max-width: 120px;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.main-menu-input::placeholder {
+    opacity: 1;
+    color: #FFF;
+  }
+
+textarea:focus, .main-menu-input:focus{
+    outline: none;
 }
 
 .travel-type{
@@ -125,14 +148,20 @@
     gap: 10px;
 }
 
+.bi-chevron-down{
+    display: flex;
+    align-items: center;
+}
+
 .home-main-section-text-btn{
     padding: 15px 57px;
     background-color: #DF6951;
     color: white;
     border: none;
     border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 600px;
 }
 
 .people-booked-container{

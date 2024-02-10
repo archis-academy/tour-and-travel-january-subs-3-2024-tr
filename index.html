@@ -15,13 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
+  <!-- Mert Hero Section -->
   <main class="home-wrapper">
-
-    <!-- navbar -->
     <header class="header-container">
-      <article>
+      <div>
         <a href=""><img src="./images/logo.png" alt="logo" class="logo-img"></a>
-      </article>
+      </div>
       <ul class="navigation-list">
         <li class="navigation-list-home"><a href="">Home</a></li>
         <li><a href="">About</a></li>
@@ -40,33 +39,28 @@
         Get in Touch
       </button>
     </header>
-    <!-- main -->
     <section class="home-main-section">
-      <article>
+      <div>
         <img src="./images/Vector-1.png" alt="">
-      </article>
-      <article class="home-main-section-text">
+      </div>
+      <div class="home-main-section-text">
         <h3>No matter where you’re going to, we’ll take you there</h3>
-      </article>
-      <!-- context -->
-      <article class="main-menu">
+      </div>
+      <div class="main-menu">
         <div>
-          <h5>Where to?</h5>
+          <input type="text" class="main-menu-input" placeholder="Where to?">
         </div>
         <div class="add-chevron travel-type">
-          <h5>Travel Type</h5>
+          <input type="text" class="main-menu-input" placeholder="Travel Type">
           <i class="bi bi-chevron-down"></i>
         </div>
         <div class="add-chevron">
-          <h5>Duration</h5>
-          <i class="bi bi-chevron-down"></i>
+          <input type="text" class="main-menu-input" placeholder="Duration">
+          <i class="bi bi-chevron-down" id="31"></i>
         </div>
-        <button class="home-main-section-text-btn">
-            Submit
-        </button>
-      </article>
-      <!-- clients -->
-      <article class="people-booked-container">
+          <input type="submit" class="home-main-section-text-btn" value="Submit">
+      </div>
+      <div class="people-booked-container">
         <div class="people-booked-img-container">
           <img src="./images/user-avatar2.png" alt="">
           <img src="./images/user-avatar3.png" alt="" class="people-booked-img">
@@ -77,12 +71,9 @@
           <img src="./images/user-avatar-emty.png" alt="" class="people-booked-img"> 
           <i class="bi bi-plus"></i>
         </div>
-        <div class="people-booked-container-desc">
-          <p>2,500 people booked Tommorowland Event in last 24 hours</p>
-        </div>
-      </article>
+          <p class="people-booked-container-desc">2,500 people booked Tommorowland Event in last 24 hours</p>
+      </div>
     </section>
-    <!-- slider -->
     <div class="slider">
     <svg xmlns="http://www.w3.org/2000/svg" width="128" height="2" viewBox="0 0 128 2" fill="none">
       <rect x="48.25" y="0.0234375" width="31.25" height="1.95312" rx="0.976562" fill="#DF6951"/>

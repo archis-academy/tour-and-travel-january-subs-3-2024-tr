@@ -8,7 +8,7 @@
     justify-content: center;
     padding: 20px 80px 20px 80px;
 }
-.testiminoalis-title > h5 {
+.testiminoalis-title-h5 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -16,7 +16,7 @@
     color: rgba(223, 105, 81, 1);
     font-family: 'Poppins', sans-serif;
 }
-.testiminoalis-title > h2 {
+.testiminoalis-title-h2 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -46,14 +46,11 @@
     position: absolute;
     margin-top: -300px;
     width: 120px;
-    z-index: 2;
-    
+    z-index: 2;   
 }
 .comment-arrow-left {
     position: absolute;
     margin-left: -500px;
-    
-    
 }
 .comment-arrow-right {  
     position: absolute;
@@ -85,14 +82,12 @@
     top: 0;
     left: 0;
 }
-
 @media screen and (max-width:1024px) {
     .section-photo {
         display: none;
     }
     
 }
-
 @media screen and (max-width:768px) {
     .testimonial-section-seashell {
         display: none;

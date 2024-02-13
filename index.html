@@ -22,9 +22,9 @@
         <a href=""><img src="./images/logo.png" alt="logo" class="logo-img"></a>
       </div>
       <ul class="navigation-list">
-        <li class="navigation-list-home"><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li class="header-dropdown">
+        <li class="navigation-list-home navigation-list-hover"><a href="">Home</a></li>
+        <li class="navigation-list-hover"><a href="">About</a></li>
+        <li class="header-dropdown navigation-list-hover">
           <a href="">Services <i class="bi bi-caret-down-fill"></i></a>
             <div class="header-dropdown-content">
               <a href="">Honeymoon Packages</a>
@@ -33,7 +33,7 @@
               <a href="">Build Package</a>
             </div>
         </li>
-        <li><a href="">Upcoming Packages</i></a></li>
+        <li class="navigation-list-hover"><a href="">Upcoming Packages</i></a></li>
       </ul>
       <button class="header-button">
         Get in Touch
@@ -51,12 +51,26 @@
           <input type="text" class="main-menu-input" placeholder="Where to?">
         </div>
         <div class="add-chevron travel-type">
-          <input type="text" class="main-menu-input" placeholder="Travel Type">
-          <i class="bi bi-chevron-down"></i>
+            <select name="travel-type" id="travel-type-select">
+              <option value="" disabled selected>Travel Type</option>
+              <option value="flight">Flight</option>
+              <option value="train">Train</option>
+              <option value="bus">Bus</option>
+              <option value="car">Car</option>
+              <option value="cruise">Cruise</option>
+              <option value="bicycle">Bicycle</option>
+            </select>
         </div>
         <div class="add-chevron">
-          <input type="text" class="main-menu-input" placeholder="Duration">
-          <i class="bi bi-chevron-down" id="31"></i>
+          <input 
+            name="travel-type" 
+            class="travel-input"
+            placeholder="Duration"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            id="date"
+          />
         </div>
           <input type="submit" class="home-main-section-text-btn" value="Submit">
       </div>

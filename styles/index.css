@@ -165,7 +165,7 @@ textarea:focus,
 
 #travel-type-select option {
   color: #fff;
-  background-color: #df6951;
+  background-color: var(--bg-color);
 }
 
 .travel-input {
@@ -230,7 +230,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .home-main-section-text-btn {
   padding: 15px 57px;
-  background-color: #df6951;
+  background-color: var(--bg-color);
   color: white;
   border: none;
   border-radius: 10px;

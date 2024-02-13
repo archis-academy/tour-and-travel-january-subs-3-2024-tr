@@ -101,7 +101,7 @@
   font-family: Poppins;
   font-size: 58.506px;
   font-style: normal;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 85px;
   max-width: 780px;
   display: flex;
@@ -236,8 +236,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 10px;
   font-family: var(--ff-prime);
   font-size: 17px;
-  font-weight: 600px;
+  font-weight: 600;
+  cursor: pointer;
 }
+
+.home-main-section-text-btn:hover {
+    transform: scale(1.1);
+  }
 
 .people-booked-container {
   display: flex;

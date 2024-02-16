@@ -2,14 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
   }
   
-  .honeymoon-text{
-    margin-left: 150px;
+  .honeymoon-text-box{
     max-width: 530px;
   }
   
-  .honeymoon{
+  .honeymoon-subtitle{
     color: #DF6951;
   }
   

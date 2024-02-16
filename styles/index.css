@@ -99,7 +99,7 @@
 .home-main-section-text {
   color: #fff;
   font-family: Poppins;
-  font-size: 58.506px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 700;
   line-height: 85px;
@@ -269,8 +269,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .scrool-container {
   position: absolute;
-  bottom: 0%;
-  transform: translateY(50%);
+  bottom: -22%;
   left: 30px;
 }
 

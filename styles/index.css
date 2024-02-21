@@ -280,6 +280,96 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   top: -12.5px;
 }
 
+.homepage-europe-container{
+  position: absolute;
+  max-width: 1483px;
+  max-height: 751px;
+  left: 200px;
+  top: 1100px;
+}
+
+.homepage-europe-container-desc{
+  max-width: 574px;
+  max-height: 103px;
+  left: 200px;
+
+  font-family: var(--ff-prime);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.homepage-europe-container h3{
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #181E4B;
+  max-width: 640px;
+  max-height: 140px;
+}
+
+.hp-promotion{
+  font-family: var(--ff-prime);
+  color: var(--bg-color);
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.hp-view-button{
+  padding: 15px;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 10px;
+  font-family: var(--ff-prime);
+  color: #fff;
+  cursor: pointer;
+}
+
+.hp-view-button:hover {
+  transform: scale(1.1);
+}
+
+.homepage-europe-img-container{
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.people-booked-img {
+  margin-left: -15px;
+}
+
+.homepage-europe-img{
+  object-fit: cover;
+  width: 231px;
+  height: 237px;
+  border-radius: 10px;
+  margin-left: 35px;
+}
+
+.homepage-europe-price-button{
+  width: 80px;
+  height: 35px;
+  border-radius: 45px;
+  background-color: var(--bg-color);
+  font-family: var(--ff-prime);
+  font-size: 14px;
+  border: none;
+  color: #fff;
+  position: absolute;
+  bottom: 28%;
+}
+
+.homepage-europe-big-img{
+  object-fit: cover;
+  width: 550px;
+  height: 710px;
+}
+
 @media (min-width: 400px) and (max-width: 600px) {
   .header-container {
     flex-wrap: wrap;

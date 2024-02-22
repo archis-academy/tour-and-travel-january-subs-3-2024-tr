@@ -10,7 +10,6 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  overflow: hidden;
   position: relative;
 }
 
@@ -82,6 +81,7 @@
   font-family: var(--ff-prime);
   color: #fff;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .header-button:hover {
@@ -98,7 +98,7 @@
 
 .home-main-section-text {
   color: #fff;
-  font-family: Poppins;
+  font-family: var(--ff-prime);
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
@@ -238,11 +238,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 17px;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .home-main-section-text-btn:hover {
-    transform: scale(1.1);
-  }
+  transform: scale(1.1);
+}
 
 .people-booked-container {
   display: flex;
@@ -280,46 +281,52 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   top: -12.5px;
 }
 
-.homepage-europe-container{
-  position: absolute;
-  max-width: 1483px;
-  max-height: 751px;
+.homepage-europe-container {
+  position: relative;
+  max-width: 1500px;
+  max-height: 800px;
   left: 200px;
-  top: 1100px;
+  top: 100px;
 }
 
-.homepage-europe-container-desc{
+.homepage-europe-text-box {
+  max-width: 650px;
+}
+
+.homepage-europe-text-box h3 {
+  font-family: var(--ff-prime);
+  color: var(--bg-color);
+  max-width: 126px;
+  max-height: 27px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.homepage-europe-text-box h6 {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: #181e4b;
+  max-width: 640px;
+  max-height: 140px;
+  line-height: 71px;
+}
+
+.homepage-europe-text-box p {
   max-width: 574px;
   max-height: 103px;
-  left: 200px;
-
   font-family: var(--ff-prime);
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #000000;
+  color: black;
+  margin-bottom: 30px;
 }
 
-.homepage-europe-container h3{
-  font-family: "Volkhov", serif;
-  font-weight: 700;
-  font-size: 50px;
-  color: #181E4B;
-  max-width: 640px;
-  max-height: 140px;
-}
-
-.hp-promotion{
-  font-family: var(--ff-prime);
-  color: var(--bg-color);
-  font-size: 18px;
-  letter-spacing: 5px;
-  font-weight: 700;
-  line-height: 27px;
-}
-
-.hp-view-button{
+.homepage-europe-text-button {
   padding: 15px;
   background-color: var(--bg-color);
   border: none;
@@ -327,31 +334,33 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: var(--ff-prime);
   color: #fff;
   cursor: pointer;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
 }
 
-.hp-view-button:hover {
+.homepage-europe-text-button:hover {
   transform: scale(1.1);
 }
 
-.homepage-europe-img-container{
+.homepage-europe-img-container {
   display: flex;
-  align-items: center;
-  gap: 1px;
+  gap: 80px;
 }
 
-.people-booked-img {
-  margin-left: -15px;
+.homepage-europe-img-box {
+  max-width: 231px;
+  max-height: 237px;
 }
 
-.homepage-europe-img{
+.homepage-europe-img {
   object-fit: cover;
   width: 231px;
   height: 237px;
   border-radius: 10px;
-  margin-left: 35px;
 }
 
-.homepage-europe-price-button{
+.homepage-europe-price-button {
+  position: relative;
   width: 80px;
   height: 35px;
   border-radius: 45px;
@@ -360,14 +369,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   border: none;
   color: #fff;
-  position: absolute;
-  bottom: 28%;
+  bottom: 230px;
+  left: 130px;
 }
 
-.homepage-europe-big-img{
+.homepage-europe-big-img {
+  max-width: 500px;
+  max-height: 630px;
   object-fit: cover;
-  width: 550px;
-  height: 710px;
+  z-index: -1;
+  bottom: -40px;
+  right: 0px;
+  position: absolute;
 }
 
 @media (min-width: 400px) and (max-width: 600px) {

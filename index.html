@@ -6,155 +6,353 @@
     <title>Tour and Travel</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/shared.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-      <div class="Trending-title">
-          <h4 id="title-h4">TRENDY</h4>
-          <h1 id="title-h1">Our Trending Tour Packages</h1>
+    <!-- Mert Hero Section -->
+    <main class="home-wrapper">
+      <header class="header-container">
+        <div>
+          <a href=""
+            ><img src="./images/logo.png" alt="logo" class="logo-img"
+          /></a>
+        </div>
+        <ul class="navigation-list">
+          <li class="navigation-list-home navigation-list-hover">
+            <a href="">Home</a>
+          </li>
+          <li class="navigation-list-hover"><a href="">About</a></li>
+          <li class="header-dropdown navigation-list-hover">
+            <a href="">Services <i class="bi bi-caret-down-fill"></i></a>
+            <div class="header-dropdown-content">
+              <a href="">Honeymoon Packages</a>
+              <a href="">Tours Packages</a>
+              <a href="">Musical Events</a>
+              <a href="">Build Package</a>
+            </div>
+          </li>
+          <li class="navigation-list-hover">
+            <a href="">Upcoming Packages</a>
+          </li>
+        </ul>
+        <button class="header-button">Get in Touch</button>
+      </header>
+      <section class="home-main-section">
+        <div>
+          <img src="./images/Vector-1.png" alt="" />
+        </div>
+        <div class="home-main-section-text">
+          <h1>No matter where you’re going to, we’ll take you there</h1>
+        </div>
+        <div class="main-menu">
+          <div>
+            <input
+              type="text"
+              class="main-menu-input"
+              placeholder="Where to?"
+            />
+          </div>
+          <div class="add-chevron travel-type">
+            <select name="travel-type" id="travel-type-select">
+              <option value="" disabled selected>Travel Type</option>
+              <option value="flight">Flight</option>
+              <option value="train">Train</option>
+              <option value="bus">Bus</option>
+              <option value="car">Car</option>
+              <option value="cruise">Cruise</option>
+              <option value="bicycle">Bicycle</option>
+            </select>
+          </div>
+          <div class="add-chevron">
+            <input
+              name="travel-type"
+              class="travel-input"
+              placeholder="Duration"
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="date"
+            />
+          </div>
+          <input
+            type="submit"
+            class="home-main-section-text-btn"
+            value="Submit"
+          />
+        </div>
+        <div class="people-booked-container">
+          <div class="people-booked-img-container">
+            <img src="./images/user-avatar2.png" alt="" />
+            <img
+              src="./images/user-avatar3.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar4.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar1.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar5.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar6.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar-emty.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <i class="bi bi-plus"></i>
+          </div>
+          <p class="people-booked-container-desc">
+            2,500 people booked Tommorowland Event in last 24 hours
+          </p>
+        </div>
+      </section>
+      <div class="slider">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="128"
+          height="2"
+          viewBox="0 0 128 2"
+          fill="none"
+        >
+          <rect
+            x="48.25"
+            y="0.0234375"
+            width="31.25"
+            height="1.95312"
+            rx="0.976562"
+            fill="#DF6951"
+          />
+          <rect
+            x="96.5"
+            y="0.0234375"
+            width="31.25"
+            height="1.95312"
+            rx="0.976562"
+            fill="white"
+          />
+          <rect
+            y="0.0234375"
+            width="31.25"
+            height="1.95312"
+            rx="0.976562"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="scrool-container">
+        <img src="./images/scroll.png" alt="" />
+      </div>
+    </main>
+    <!--Esat Albayrak/TrendingTourPackages-->
+    <div class="Trending-title">
+      <h4 id="title-h4">TRENDY</h4>
+      <h1 id="title-h1">Our Trending Tour Packages</h1>
+    </div>
+
+    <div class="Packages">
+      <div class="group1">
+        <img
+          src="/images/hometour-packages-switzerland.png"
+          alt="switzerland"
+        />
+        <img src="/images/swiss-flag.png" id="swiss-flag" />
+
+        <div class="swis-caption" style="display: flex">
+          <div
+            id="calender-div"
+            style="display: flex; align-items: center; gap: 5px"
+          >
+            <img
+              src="/images/hometour-packages-calender-icon.png"
+              id="calender"
+            />
+            <p>8 days</p>
+          </div>
+
+          <div
+            id="visitor-div"
+            style="display: flex; align-items: center; gap: 5px"
+          >
+            <img
+              src="/images/hometour-packages-user-icon.png"
+              id="packages-icon"
+            />
+            <p>25 people going</p>
+          </div>
+        </div>
+        <div id="country">
+          <h1>Switzerland</h1>
+          <div class="star-vote">
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+          </div>
+        </div>
+        <div class="tour-info">
+          <div class="packages-local">
+            <img src="/images/hometour-packages-location-icon.png" alt="" />
+            <p>Europe</p>
+          </div>
+          <div class="tour-price">
+            <h1>1,000 $</h1>
+            <h2>1,250 $</h2>
+            <img src="/images/line001.png" class="price-line" />
+          </div>
+        </div>
+        <p class="tour-explanation">
+          Nam exercitationem commodi et ducimus quia in dolore animi sit
+          mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum
+          molestias mollitia et corporis praesentium a laudantium internos.
+        </p>
+        <div class="search-button">Explore now</div>
       </div>
 
-      <div class="Packages">
-        <div class="group1">
-          <img src="/images/hometour-packages-switzerland.png" alt="switzerland">
-          <img src="/images/swiss-flag.png" id="swiss-flag">
+      <div class="group1">
+        <img src="/images/hometour-packages-brazil.png" alt="switzerland" />
+        <img src="/images/brazil-flag.png" id="swiss-flag" />
 
-            <div class="swis-caption" style="display: flex;">
-              <div id="calender-div" style="display: flex; align-items: center; gap: 5px;">
-                  <img src="/images/hometour-packages-calender-icon.png" id="calender">
-                  <p>8 days</p>
-              </div>
-            
-              <div id="visitor-div" style="display: flex; align-items: center; gap: 5px;" >
-                <img src="/images/hometour-packages-user-icon.png" id="packages-icon">
-                <p>25 people going</p>
-              </div>
-            </div>
-            <div id="country">
-              <h1>Switzerland</h1>
-              <div class="star-vote">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-              </div>
-            </div>
-            <div  class="tour-info">
-              <div class="packages-local">
-                <img src="/images/hometour-packages-location-icon.png" alt="">
-                <p>Europe</p>
-              </div>
-              <div class="tour-price">
-                  <h1>1,000    $</h1>
-                  <h2>1,250    $</h2>
-                  <img src="/images/line001.png" class="price-line">
-              </div>
-            </div>
-            <p class="tour-explanation">
-              Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos.
-            </p>
-            <div class="search-button">
-              Explore now
-            </div>
+        <div class="swis-caption" style="display: flex">
+          <div
+            id="calender-div"
+            style="display: flex; align-items: center; gap: 5px"
+          >
+            <img
+              src="/images/hometour-packages-calender-icon.png"
+              id="calender"
+            />
+            <p>8 days</p>
+          </div>
 
+          <div
+            id="visitor-div"
+            style="display: flex; align-items: center; gap: 5px"
+          >
+            <img
+              src="/images/hometour-packages-user-icon.png"
+              id="packages-icon"
+            />
+            <p>30 people going</p>
+          </div>
         </div>
-
-        <div class="group1">
-          <img src="/images/hometour-packages-brazil.png" alt="switzerland">
-          <img src="/images/brazil-flag.png" id="swiss-flag">
-
-            <div class="swis-caption" style="display: flex;">
-              <div id="calender-div" style="display: flex; align-items: center; gap: 5px;">
-                  <img src="/images/hometour-packages-calender-icon.png" id="calender">
-                  <p>8 days</p>
-              </div>
-            
-              <div id="visitor-div" style="display: flex; align-items: center; gap: 5px;" >
-                <img src="/images/hometour-packages-user-icon.png" id="packages-icon">
-                <p >30 people going</p>
-              </div>
-            </div>
-            <div id="country">
-              <h1>Amazon</h1>
-              <div class="star-vote">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-              </div>
-            </div>
-            <div  class="tour-info">
-              <div class="packages-local">
-                <img src="/images/hometour-packages-location-icon.png" alt="">
-                <p>Brazil</p>
-              </div>
-              <div class="tour-price">
-                  <h1>1,223    $</h1>
-                  <h2>1,200    $</h2>
-                  <img src="/images/line001.png" class="price-line">
-              </div>
-            </div>
-            <p class="tour-explanation">
-              Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos.
-            </p>
-            <div class="search-button">
-              Explore now
-            </div>
-
+        <div id="country">
+          <h1>Amazon</h1>
+          <div class="star-vote">
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+          </div>
         </div>
-
-        <div class="group1">
-          <img src="/images/hometour-packages-eygpt.png" alt="switzerland">
-          <img src="/images/egypt-flag.png" id="swiss-flag">
-
-            <div class="swis-caption" style="display: flex;">
-              <div id="calender-div" style="display: flex; align-items: center; gap: 5px;">
-                  <img src="/images/hometour-packages-calender-icon.png" id="calender">
-                  <p>8 days</p>
-              </div>
-            
-              <div id="visitor-div" style="display: flex; align-items: center; gap: 5px;" >
-                <img src="/images/hometour-packages-user-icon.png" id="packages-icon">
-                <p>155 people going</p>
-              </div>
-            </div>
-            <div id="country">
-              <h1>Giza</h1>
-              <div class="star-vote">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-                <img src="/images/hometour-packages-star-img.png" alt="">
-              </div>
-            </div>
-            <div  class="tour-info">
-              <div class="packages-local">
-                <img src="/images/hometour-packages-location-icon.png" alt="">
-                <p>Egypt</p>
-              </div>
-              <div class="tour-price">
-                  <h1>1,200    $</h1>
-                  <h2>1,200    $</h2>
-                  <img src="/images/line001.png" class="price-line">
-              </div>
-            </div>
-            <p class="tour-explanation">
-              Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos.
-            </p>
-            <div class="search-button">
-              Explore now
-            </div>
-
+        <div class="tour-info">
+          <div class="packages-local">
+            <img src="/images/hometour-packages-location-icon.png" alt="" />
+            <p>Brazil</p>
+          </div>
+          <div class="tour-price">
+            <h1>1,223 $</h1>
+            <h2>1,200 $</h2>
+            <img src="/images/line001.png" class="price-line" />
+          </div>
         </div>
-
+        <p class="tour-explanation">
+          Nam exercitationem commodi et ducimus quia in dolore animi sit
+          mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum
+          molestias mollitia et corporis praesentium a laudantium internos.
+        </p>
+        <div class="search-button">Explore now</div>
       </div>
+
+      <div class="group1">
+        <img src="/images/hometour-packages-eygpt.png" alt="switzerland" />
+        <img src="/images/egypt-flag.png" id="swiss-flag" />
+
+        <div class="swis-caption" style="display: flex">
+          <div
+            id="calender-div"
+            style="display: flex; align-items: center; gap: 5px"
+          >
+            <img
+              src="/images/hometour-packages-calender-icon.png"
+              id="calender"
+            />
+            <p>8 days</p>
+          </div>
+
+          <div
+            id="visitor-div"
+            style="display: flex; align-items: center; gap: 5px"
+          >
+            <img
+              src="/images/hometour-packages-user-icon.png"
+              id="packages-icon"
+            />
+            <p>155 people going</p>
+          </div>
+        </div>
+        <div id="country">
+          <h1>Giza</h1>
+          <div class="star-vote">
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+            <img src="/images/hometour-packages-star-img.png" alt="" />
+          </div>
+        </div>
+        <div class="tour-info">
+          <div class="packages-local">
+            <img src="/images/hometour-packages-location-icon.png" alt="" />
+            <p>Egypt</p>
+          </div>
+          <div class="tour-price">
+            <h1>1,200 $</h1>
+            <h2>1,200 $</h2>
+            <img src="/images/line001.png" class="price-line" />
+          </div>
+        </div>
+        <p class="tour-explanation">
+          Nam exercitationem commodi et ducimus quia in dolore animi sit
+          mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum
+          molestias mollitia et corporis praesentium a laudantium internos.
+        </p>
+        <div class="search-button">Explore now</div>
+      </div>
+    </div>
   </body>
 </html>

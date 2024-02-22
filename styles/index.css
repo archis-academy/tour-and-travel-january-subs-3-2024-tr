@@ -1,33 +1,325 @@
-*{
-    font-family: 'Poppins', sans-serif;
+:root {
+  --bg-color: #df6951;
+  --ff-prime: "Poppins", sans-serif;
 }
-.list-item:nth-child(2){
-    margin: 40px 0 40px 0;
+
+.home-wrapper {
+  background-image: url("../images/homepage-background.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.navigation-list-hover:hover {
+  border-bottom: 2px solid #df6951;
+}
+
+.navigation-list-hover.clicked li {
+  border-bottom: 2px solid #df6951;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1210px;
+  margin: auto;
+  padding: 30px 0px;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-family: var(--ff-prime);
+  font-size: 17px;
+}
+
+.navigation-list a {
+  color: #fff;
+}
+
+.header-dropdown {
+  position: relative;
+}
+
+.header-dropdown-content {
+  background-image: url("../images/popup-cloud.png");
+  height: 200px;
+  width: 250px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -20px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 20px;
+  gap: 20px;
+  line-height: 35px;
+  color: #fff;
+  font-weight: 400;
+  font-family: var(--ff-prime);
+  font-size: 14px;
+  display: none;
+}
+
+.header-dropdown-content a {
+  display: block;
+}
+
+.header-dropdown:hover .header-dropdown-content {
+  display: block;
+}
+
+.header-button {
+  padding: 15px;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 5px;
+  font-family: var(--ff-prime);
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  transform: scale(1.1);
+}
+
+.home-main-section {
+  max-width: 1200px;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.home-main-section-text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 85px;
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-menu {
+  background-color: rgba(243, 243, 243, 0.6);
+  backdrop-filter: blur(17.760618209838867px);
+  border-radius: 5.224px;
+  max-width: 844px;
+  display: flex;
+  padding: 20px 15px;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  font-family: var(--ff-prime);
+  font-size: 18.805px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main-menu-input {
+  background-color: transparent;
+  padding: 20px 15px;
+  border: none;
+  height: 20px;
+  max-width: 120px;
+  color: #fff;
+  font-family: var(--ff-prime);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.main-menu-input::placeholder {
+  opacity: 1;
+  color: #fff;
+}
+
+textarea:focus,
+.main-menu-input:focus {
+  outline: none;
+}
+
+#travel-type-select {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: var(--ff-prime);
+}
+
+#travel-type-select:focus {
+  outline: none;
+}
+
+#travel-type-select option {
+  color: #fff;
+  background-color: var(--bg-color);
+}
+
+.travel-input {
+  font-family: var(--ff-prime);
+  border: none;
+  border-style: none;
+  background: transparent;
+  color: #fff;
+  max-width: 120px;
+}
+
+.travel-input::placeholder {
+  opacity: 1;
+  color: #fff;
+  font-family: var(--ff-prime);
+  font-size: 16px;
+  text-align: center;
+}
+
+#date {
+  background-color: transparent;
+  border: none;
+  border-style: none;
+  font-family: var(--ff-prime);
+  font-size: 16px;
+  text-align: center;
+}
+
+#date:focus {
+  outline: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+.travel-type {
+  border-left: 2px solid #d0d0d0;
+  border-right: 2px solid #d0d0d0;
+  padding: 0px 40px;
+  border-radius: 1px;
+}
+
+.add-chevron {
+  display: flex;
+  gap: 10px;
+}
+
+.bi-chevron-down {
+  display: flex;
+  align-items: center;
+}
+
+.home-main-section-text-btn {
+  padding: 15px 57px;
+  background-color: var(--bg-color);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--ff-prime);
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-main-section-text-btn:hover {
+  transform: scale(1.1);
+}
+
+.people-booked-container {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.people-booked-img {
+  margin-left: -15px;
+}
+
+.people-booked-container-desc {
+  color: #fff;
+  font-weight: 500;
+  font-family: var(--ff-prime);
+  font-size: 12px;
+  font-style: normal;
+}
+
+.slider {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.scrool-container {
+  position: absolute;
+  bottom: -22%;
+  left: 30px;
+}
+
+.bi-plus {
+  color: white;
+  position: relative;
+  left: -29.9px;
+  top: -12.5px;
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .header-container {
+    flex-wrap: wrap;
+  }
+  .scrool-container img {
+    width: 50px;
+  }
+  .navigation-list {
+    flex-wrap: wrap;
+  }
+}
+/* Esat ALbayrak/ FavoriteResorts */
+
+.list-item:nth-child(2) {
+  margin: 40px 0 40px 0;
 }
 .value {
-    width: 50px;
-    margin-right: 10px;
+  width: 50px;
+  margin-right: 10px;
 }
 
 .get-h1 {
-    font-size: 40px;
-    width: 350px;
-    margin-bottom: 20px;
-    font-weight:bold
+  font-size: 40px;
+  width: 350px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
-.fav-res{
-    display: flex;
-    justify-content: center;
+.fav-res {
+  display: flex;
+  justify-content: center;
 }
-.bookings{
-    margin-left: 200px;
+.bookings {
+  margin-left: 200px;
 }
 
 article {
-    padding: 50px 0;
+  padding: 50px 0;
 }
-@media screen and (max-width:375px) {
-    .book-trip{
-        display:none;
-    }
+@media screen and (max-width: 375px) {
+  .book-trip {
+    display: none;
+  }
 }

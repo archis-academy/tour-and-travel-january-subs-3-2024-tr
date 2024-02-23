@@ -1,3 +1,4 @@
+/* Mert Hero Section Start*/
 :root {
   --bg-color: #df6951;
   --ff-prime: "Poppins", sans-serif;
@@ -11,6 +12,7 @@
   background-position: center center;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .navigation-list-hover:hover {
@@ -281,12 +283,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   top: -12.5px;
 }
 
+/* Mert Hero Section End*/
+
+/* Mert Homepage Europe Sightseeing Tours Section Start */
 .homepage-europe-container {
   position: relative;
   max-width: 1500px;
-  max-height: 800px;
-  left: 200px;
-  top: 100px;
+  margin: 0% auto;
 }
 
 .homepage-europe-text-box {
@@ -350,6 +353,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .homepage-europe-img-box {
   max-width: 231px;
   max-height: 237px;
+  position: relative;
 }
 
 .homepage-europe-img {
@@ -360,7 +364,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .homepage-europe-price-button {
-  position: relative;
+  position: absolute;
   width: 80px;
   height: 35px;
   border-radius: 45px;
@@ -369,8 +373,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   border: none;
   color: #fff;
-  bottom: 230px;
-  left: 130px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.homepage-europe-price-button:hover {
+  transform: scale(1.1);
 }
 
 .homepage-europe-big-img {
@@ -394,3 +404,4 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-wrap: wrap;
   }
 }
+/* Mert Homepage Europe Sightseeing Tours Section End */

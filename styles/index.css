@@ -292,21 +292,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 /* Esat Albayrak/BestServices */
-* {
-  font-family: "Poppins", sans-serif;
-}
 
 .services-caption-h3 {
   display: flex;
   justify-content: center;
   margin-top: 50px;
   color: rgba(223, 105, 81, 1);
+  font-family: "Poppins", sans-serif;
 }
 .services-caption-h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  font-family: "Poppins", sans-serif;
 }
 
 .best-services-stack {
@@ -315,12 +314,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
-  max-width:  1400px ;
+  max-width: 1400px;
+  font-family: "Poppins", sans-serif;
 }
 
 .best-services-stack-card {
   width: 250px;
   text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 .best-services-card-img {
   width: 80px;
@@ -328,21 +329,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  font-family: "Poppins", sans-serif;
 }
 .best-services-stack-card p {
   margin: 20px 10px 10px 20px;
   width: 75%;
+  font-family: "Poppins", sans-serif;
 }
 
 .best-services-stack-card h3 {
   margin: 10px 5px 0 5px;
+  font-family: "Poppins", sans-serif;
 }
 .stack-card h4 {
   margin: 10px 0 -5px 0;
+  font-family: "Poppins", sans-serif;
 }
 .best-services-stack .best-services-stack-card:nth-child(2) {
   box-shadow: -6px 5px 18px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
+  font-family: "Poppins", sans-serif;
 }
 
 @media screen and (max-width: 800px) {

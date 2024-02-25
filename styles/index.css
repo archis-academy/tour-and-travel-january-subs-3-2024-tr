@@ -296,53 +296,51 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: "Poppins", sans-serif;
 }
 
-.caption-h3 {
+.services-caption-h3 {
   display: flex;
-  width: 100%;
   justify-content: center;
-  align-items: center;
   margin-top: 50px;
   color: rgba(223, 105, 81, 1);
 }
-.caption-h1 {
+.services-caption-h1 {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
 
-.stack {
+.best-services-stack {
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 50px;
+  max-width:  1400px ;
 }
 
-.stack-card {
+.best-services-stack-card {
   width: 250px;
   text-align: center;
 }
-.card-img {
+.best-services-card-img {
   width: 80px;
   height: 80px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
 }
-.stack-card p {
+.best-services-stack-card p {
   margin: 20px 10px 10px 20px;
   width: 75%;
 }
 
-.stack-card h3 {
+.best-services-stack-card h3 {
   margin: 10px 5px 0 5px;
 }
 .stack-card h4 {
   margin: 10px 0 -5px 0;
 }
-.stack .stack-card:nth-child(2) {
+.best-services-stack .best-services-stack-card:nth-child(2) {
   box-shadow: -6px 5px 18px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
 }

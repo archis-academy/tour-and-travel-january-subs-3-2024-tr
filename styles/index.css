@@ -27,11 +27,14 @@ body {
   background-color: var(--bg-color);
   font-family: var(--ff-prime);
   color: var(--theme-switcher-text-color);
-  font-size: 14px;
-  padding: 10px 20px;
-  border-radius: 30px;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 40px;
   transition: all 0.3s ease;
   cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 40px;
 }
 
 .main-theme-switcher:hover{

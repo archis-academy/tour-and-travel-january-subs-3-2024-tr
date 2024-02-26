@@ -1,17 +1,57 @@
+/* Mert Hero Section Start*/
 :root {
   --bg-color: #df6951;
   --ff-prime: "Poppins", sans-serif;
+  --theme-switcher-bg-color: #f5f5f5;
+  --theme-switcher-text-color: #202225;
+  --homepage-eu-darkmode-text-color:  #181e4b;
+  --hero-section-backgorund-img: url("../images/homepage-background.png");
 }
 
+/* Mert Theme Switcher Start */
+body {
+  background-color: var(--theme-switcher-bg-color);
+  color: var(--theme-switcher-text-color);
+}
+
+.dark-theme {
+  --theme-switcher-bg-color: #202225;
+  --theme-switcher-text-color: #f5f5f5;
+  --homepage-eu-darkmode-text-color:  #7289da;
+  --hero-section-backgorund-img: url("../images/night-wallpaper.jpg");
+  transition: 0.7s ease-in-out;
+}
+
+.main-theme-switcher{
+  border: none;
+  background-color: var(--bg-color);
+  font-family: var(--ff-prime);
+  color: var(--theme-switcher-text-color);
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  outline: none;
+  width: 40px;
+  height: 40px;
+}
+
+.main-theme-switcher:hover{
+  transform: scale(1.1);
+}
+/* Mert Theme Switcher End */
+
 .home-wrapper {
-  background-image: url("../images/homepage-background.png");
+  background-image: var(--hero-section-backgorund-img);
+  transition: 0.7s ease-in-out;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   width: 100%;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .navigation-list-hover:hover {
@@ -82,6 +122,7 @@
   font-family: var(--ff-prime);
   color: #fff;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .header-button:hover {
@@ -98,7 +139,7 @@
 
 .home-main-section-text {
   color: #fff;
-  font-family: Poppins;
+  font-family: var(--ff-prime);
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
@@ -238,11 +279,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 17px;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .home-main-section-text-btn:hover {
-    transform: scale(1.1);
-  }
+  transform: scale(1.1);
+}
 
 .people-booked-container {
   display: flex;
@@ -279,6 +321,115 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: -29.9px;
   top: -12.5px;
 }
+/* Mert Hero Section End*/
+
+/* Mert Homepage Europe Sightseeing Tours Section Start */
+.homepage-europe-container {
+  position: relative;
+  max-width: 1500px;
+  margin: 0% auto;
+}
+
+.homepage-europe-text-box {
+  max-width: 650px;
+}
+
+.homepage-europe-text-box h3 {
+  font-family: var(--ff-prime);
+  color: var(--bg-color);
+  max-width: 126px;
+  max-height: 27px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.homepage-europe-text-box h6 {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: var(--homepage-eu-darkmode-text-color);
+  max-width: 640px;
+  max-height: 140px;
+  line-height: 71px;
+}
+
+.homepage-europe-text-box p {
+  max-width: 574px;
+  max-height: 103px;
+  font-family: var(--ff-prime);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--theme-switcher-text-color);
+  margin-bottom: 30px;
+}
+
+.homepage-europe-text-button {
+  padding: 15px;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 10px;
+  font-family: var(--ff-prime);
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+.homepage-europe-text-button:hover {
+  transform: scale(1.1);
+}
+
+.homepage-europe-img-container {
+  display: flex;
+  gap: 80px;
+}
+
+.homepage-europe-img-box {
+  max-width: 231px;
+  max-height: 237px;
+  position: relative;
+}
+
+.homepage-europe-img {
+  object-fit: cover;
+  width: 231px;
+  height: 237px;
+  border-radius: 10px;
+}
+
+.homepage-europe-price-button {
+  position: absolute;
+  width: 80px;
+  height: 35px;
+  border-radius: 45px;
+  background-color: var(--bg-color);
+  font-family: var(--ff-prime);
+  font-size: 14px;
+  border: none;
+  color: #fff;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.homepage-europe-price-button:hover {
+  transform: scale(1.1);
+}
+
+.homepage-europe-big-img {
+  max-width: 500px;
+  max-height: 630px;
+  object-fit: cover;
+  z-index: -1;
+  bottom: -40px;
+  right: 0px;
+  position: absolute;
+}
 
 @media (min-width: 400px) and (max-width: 600px) {
   .header-container {
@@ -291,3 +442,4 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     flex-wrap: wrap;
   }
 }
+/* Mert Homepage Europe Sightseeing Tours Section End */

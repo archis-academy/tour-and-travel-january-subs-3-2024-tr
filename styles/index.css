@@ -4,7 +4,7 @@
   --ff-prime: "Poppins", sans-serif;
   --theme-switcher-bg-color: #f5f5f5;
   --theme-switcher-text-color: #202225;
-  --homepage-eu-darkmode-text-color:  #181e4b;
+  --homepage-eu-darkmode-text-color: #181e4b;
   --hero-section-backgorund-img: url("../images/homepage-background.png");
 }
 
@@ -17,12 +17,12 @@ body {
 .dark-theme {
   --theme-switcher-bg-color: #202225;
   --theme-switcher-text-color: #f5f5f5;
-  --homepage-eu-darkmode-text-color:  #7289da;
+  --homepage-eu-darkmode-text-color: #7289da;
   --hero-section-backgorund-img: url("../images/night-wallpaper.jpg");
   transition: 0.7s ease-in-out;
 }
 
-.main-theme-switcher{
+.main-theme-switcher {
   border: none;
   background-color: var(--bg-color);
   font-family: var(--ff-prime);
@@ -37,7 +37,7 @@ body {
   height: 40px;
 }
 
-.main-theme-switcher:hover{
+.main-theme-switcher:hover {
   transform: scale(1.1);
 }
 /* Mert Theme Switcher End */

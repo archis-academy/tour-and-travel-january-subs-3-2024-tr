@@ -4,21 +4,244 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour and Travel</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/shared.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/shared.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fe33380c70.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-          <!-- Batu Footer -->
   <body>
+    <!-- Mert Hero Section Start -->
+    <main class="home-wrapper">
+      <header class="header-container">
+        <div>
+          <a href=""
+            ><img src="./images/logo.png" alt="logo" class="logo-img"
+          /></a>
+        </div>
+        <ul class="navigation-list">
+          <li class="navigation-list-home navigation-list-hover">
+            <a href="">Home</a>
+          </li>
+          <li class="navigation-list-hover"><a href="">About</a></li>
+          <li class="header-dropdown navigation-list-hover">
+            <a href="">Services <i class="bi bi-caret-down-fill"></i></a>
+            <div class="header-dropdown-content">
+              <a href="">Honeymoon Packages</a>
+              <a href="">Tours Packages</a>
+              <a href="">Musical Events</a>
+              <a href="">Build Package</a>
+            </div>
+          </li>
+          <li class="navigation-list-hover">
+            <a href="">Upcoming Packages</a>
+          </li>
+        </ul>
+        <!-- Mert Theme Switcher Start -->
+        <button id="theme-toggle" class="main-theme-switcher">
+          <span class="moon-icon"><i class="fa fa-moon"></i></span>
+          <span class="sun-icon"><i class="fa fa-sun"></i></span>
+        </button>
+        <script src="script.js"></script>
+        <!-- Mert Theme Switcher End -->
+        <button class="header-button">Get in Touch</button>
+      </header>
+      <section class="home-main-section">
+        <div>
+          <img src="./images/Vector-1.png" alt="" />
+        </div>
+        <div class="home-main-section-text">
+          <h1>No matter where you’re going to, we’ll take you there</h1>
+        </div>
+        <div class="main-menu">
+          <div>
+            <input
+              type="text"
+              class="main-menu-input"
+              placeholder="Where to?"
+            />
+          </div>
+          <div class="add-chevron travel-type">
+            <select name="travel-type" id="travel-type-select">
+              <option value="" disabled selected>Travel Type</option>
+              <option value="flight">Flight</option>
+              <option value="train">Train</option>
+              <option value="bus">Bus</option>
+              <option value="car">Car</option>
+              <option value="cruise">Cruise</option>
+              <option value="bicycle">Bicycle</option>
+            </select>
+          </div>
+          <div class="add-chevron">
+            <input
+              name="travel-type"
+              class="travel-input"
+              placeholder="Duration"
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="date"
+            />
+          </div>
+          <input
+            type="submit"
+            class="home-main-section-text-btn"
+            value="Submit"
+          />
+        </div>
+        <div class="people-booked-container">
+          <div class="people-booked-img-container">
+            <img src="./images/user-avatar2.png" alt="" />
+            <img
+              src="./images/user-avatar3.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar4.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar1.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar5.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar6.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar-emty.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <i class="bi bi-plus"></i>
+          </div>
+          <p class="people-booked-container-desc">
+            2,500 people booked Tommorowland Event in last 24 hours
+          </p>
+        </div>
+      </section>
+      <div class="slider">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="128"
+          height="2"
+          viewBox="0 0 128 2"
+          fill="none"
+        >
+          <rect
+            x="48.25"
+            y="0.0234375"
+            width="31.25"
+            height="1.95312"
+            rx="0.976562"
+            fill="#DF6951"
+          />
+          <rect
+            x="96.5"
+            y="0.0234375"
+            width="31.25"
+            height="1.95312"
+            rx="0.976562"
+            fill="white"
+          />
+          <rect
+            y="0.0234375"
+            width="31.25"
+            height="1.95312"
+            rx="0.976562"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div class="scrool-container">
+        <img src="./images/scroll.png" alt="" />
+      </div>
+    </main>
+    <!-- Mert Hero Section End -->
+    <!-- Mert Homepage Europe Sightseeing Tours Section Start -->
+    <section class="homepage-europe-container">
+      <div class="homepage-europe-text-box">
+        <h3>PROMOTION</h3>
+        <h6>We Provide You Best Europe Sightseeing Tours</h6>
+        <p>
+          Et labore harum non nobis ipsum eum molestias mollitia et corporis
+          praesentium a laudantium internos. Non quis eius quo eligendi corrupti
+          et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus
+          illum aut optio quibusdam!
+        </p>
+        <button class="homepage-europe-text-button">View Packages</button>
+      </div>
+      <div class="homepage-europe-img-container">
+        <div class="homepage-europe-img-box">
+          <img
+            src="./images/europe-section1.jpg"
+            alt=""
+            class="homepage-europe-img"
+          />
+          <button class="homepage-europe-price-button">$800</button>
+        </div>
+        <div class="homepage-europe-img-box">
+          <img
+            src="./images/europe-section2.jpg"
+            alt=""
+            class="homepage-europe-img"
+          />
+          <button class="homepage-europe-price-button">$800</button>
+        </div>
+        <div class="homepage-europe-img-box">
+          <img
+            src="./images/europe-section3.jpg"
+            alt=""
+            class="homepage-europe-img"
+          />
+          <button class="homepage-europe-price-button">$500</button>
+        </div>
+        <div class="homepage-europe-img-box">
+          <img
+            src="./images/europe-section4.jpg"
+            alt=""
+            class="homepage-europe-img"
+          />
+          <button class="homepage-europe-price-button">$400</button>
+        </div>
+      </div>
+      <img
+        src="./images/europe-section5.png"
+        alt=""
+        class="homepage-europe-big-img"
+      />
+    </section>
+    <!-- Mert Homepage Europe Sightseeing Tours Section End -->
     <div class="footerMainDiv">
       <footer class="homepageFooter">
         <div class="footerFirstColon">
@@ -87,10 +310,7 @@
             class="footerLastColonImage"
           />
         </div>
-
-    
       </footer>
     </div>
-    
   </body>
 </html>

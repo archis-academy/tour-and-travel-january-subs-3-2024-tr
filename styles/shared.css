@@ -185,13 +185,11 @@ a {
   z-index: -1;
 }
 
-
-
-.footerCopyrightText{
-position: relative;
-margin-top: 10px;
-transform: translateY(200px);
-display: flex;
-justify-content: center;
-right: 600px;
+.footerCopyrightText {
+  position: relative;
+  margin-top: 10px;
+  transform: translateY(200px);
+  display: flex;
+  justify-content: center;
+  right: 600px;
 }

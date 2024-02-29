@@ -292,7 +292,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 /* EsatAlbayrak/TrendingTourPackages */
-.Packages {
+.trend-tour-packages {
   display: flex;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
@@ -306,21 +306,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding: 50px 0;
 }
 
-#title-h4 {
+#trending-title-h4 {
   color: rgba(223, 105, 81, 1);
   font-family: "Poppins", sans-serif;
 }
 
-#title-h1 {
+#trending-title-h2 {
   font-family: "Volkhov", serif;
 }
-.group1 {
+.trend-tour-group-one {
   display: grid;
   max-width: min-content;
 }
 #swiss-flag {
   position: absolute;
-  margin-top: 260px;
+  left: 10%;
+  bottom:-20%;
 }
 .swis-caption {
   align-items: center;
@@ -336,13 +337,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: "Poppins", sans-serif;
   font-family: "Volkhov", serif;
 }
+
+#country h2 {
+  font-weight: bold;
+}
+
 .swis-caption,
 #visitor-div {
   color: rgba(125, 125, 125, 1);
 }
 .tour-info {
-  display: grid;
-  width: fit-content;
+  
   padding: 10px 0 0 10px;
 }
 .packages-local {
@@ -374,4 +379,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 20px;
   margin: 10px 0 0 10px;
   font-family: "Poppins", sans-serif;
+}
+.Trending-Tour-Packages-Div {
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+.tour-img-div {
+  position: relative;
+  border: 2px solid red;
 }

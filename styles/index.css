@@ -293,31 +293,32 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /* Esat ALbayrak/ FavoriteResorts */
 
-.list-item:nth-child(2) {
+.favourite-resorts-item:nth-child(2){
   margin: 40px 0 40px 0;
 }
-.value {
+.resorts-value-img {
   width: 50px;
   margin-right: 10px;
 }
 
-.get-h1 {
+.favourite-h2 {
   font-size: 40px;
   width: 350px;
   margin-bottom: 20px;
   font-weight: bold;
 }
-.fav-res {
+.favourite-resorts-div {
   display: flex;
-  justify-content: center;
-}
-.bookings {
-  margin-left: 200px;
+  justify-content: space-between;
+  
 }
 
-article {
+.homepage-favourite-resorts {
   padding: 50px 0;
+  max-width: 1500px;
+  margin: 0 auto;
 }
+
 @media screen and (max-width: 375px) {
   .book-trip {
     display: none;

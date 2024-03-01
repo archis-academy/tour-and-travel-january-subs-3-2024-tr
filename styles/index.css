@@ -301,7 +301,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   flex-wrap: wrap;
 }
 
-.partners-section img {
+.partners-section-stack img {
   width: 150px;
   filter: grayscale(100%);
   mix-blend-mode: multiply;

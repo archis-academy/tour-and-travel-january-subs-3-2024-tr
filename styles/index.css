@@ -443,3 +443,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 /* Mert Homepage Europe Sightseeing Tours Section End */
+
+/* Esat Albayrak/PartnersSection */
+.partners-section-stack {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partners-section-stack img {
+  width: 150px;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+}

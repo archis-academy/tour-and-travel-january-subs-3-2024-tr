@@ -315,7 +315,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: "Volkhov", serif;
 }
 .trend-tour-group-one {
-  display: grid;
   max-width: min-content;
 }
 #swiss-flag {
@@ -360,25 +359,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 5px 5px;
 }
-.price-line {
-  position: relative;
-  rotate: 90deg;
-  margin-left: -60px;
-  width: 5px;
-}
+
 .tour-explanation {
   padding: 0 15px 0 15px;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
 }
 .search-button {
-  padding: 20px;
+  display: inline-block;
+  padding: 5px ;
   background-color: rgba(223, 105, 81, 1);
   width: fit-content;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 10px 0 0 10px;
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 .Trending-Tour-Packages-Div {
   max-width: 1500px;
@@ -389,5 +386,4 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .tour-img-div {
   position: relative;
-  border: 2px solid red;
 }

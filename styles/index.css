@@ -662,3 +662,112 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .tour-img-div {
   position: relative;
 }
+/* Esat Albayrak */
+.testiminoalis-section {
+  display: grid;
+  justify-content: center;
+  position: relative;
+}
+.testiminoalis-title {
+  display: grid;
+  justify-content: center;
+  padding: 20px 80px 20px 80px;
+}
+.testiminoalis-title-h5 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: rgba(223, 105, 81, 1);
+  font-family: "Poppins", sans-serif;
+}
+.testiminoalis-title-h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  font-size: 64px;
+  text-align: center;
+  font-family: "Volkhov", serif;
+}
+.testiminoalis-comment {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.testiminoalis-comment-p {
+  position: relative;
+}
+
+.comment-text {
+  display: grid;
+  text-align: center;
+  padding: 60px 30px;
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+  max-width: 500px;
+}
+.comment-text h6 {
+  margin-top: 5%;
+}
+.box-pp-img {
+  position: absolute;
+  top: -30%;
+  z-index: 2;
+}
+.comment-arrow-left {
+  position: absolute;
+  margin-left: -500px;
+}
+.comment-arrow-right {
+  position: absolute;
+  margin-right: -500px;
+}
+
+.testimonials-container {
+  background-color: rgb(#f8f8f8);
+  margin-top: 50px;
+}
+.section-hat {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  bottom: 0;
+}
+.section-photo {
+  position: absolute;
+  right: 5%;
+  top: -10%;
+  z-index: -1;
+}
+.testimonial-section-seashell {
+  position: absolute;
+  left: 5%;
+  top: -10%;
+  z-index: -1;
+}
+.box-quotes {
+  position: absolute;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .section-photo {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonial-section-seashell {
+    display: none;
+  }
+  .section-hat {
+    display: none;
+  }
+  .comment-arrow-left {
+    display: none;
+  }
+  .comment-arrow-right {
+    display: none;
+  }
+}

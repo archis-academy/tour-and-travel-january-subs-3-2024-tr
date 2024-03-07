@@ -466,6 +466,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
   gap: 150px;
+  
 }
 
 .Trending-title {
@@ -483,7 +484,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: "Volkhov", serif;
 }
 .trend-tour-group-one {
-  max-width: min-content;
+  max-width: 400px;
+  display: grid;
+
 }
 #swiss-flag {
   position: absolute;

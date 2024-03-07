@@ -323,6 +323,129 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /* Mert Hero Section End*/
 
+/* Esat Albayrak/PartnersSection */
+.partners-section-stack {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partners-section-stack img {
+  width: 150px;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+}
+
+/* Esat Albayrak/BestServices */
+
+.services-caption-h3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  color: rgba(223, 105, 81, 1);
+  font-family: "Poppins", sans-serif;
+}
+.services-caption-h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.best-services-stack {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  max-width: 1500px;
+  font-family: "Poppins", sans-serif;
+}
+
+.best-services-stack-card {
+  width: 250px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.best-services-card-img {
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.best-services-stack-card p {
+  margin: 20px 10px 10px 20px;
+  width: 75%;
+  font-family: "Poppins", sans-serif;
+}
+
+.best-services-stack-card h3 {
+  margin: 10px 5px 0 5px;
+  font-family: "Poppins", sans-serif;
+}
+.stack-card h4 {
+  margin: 10px 0 -5px 0;
+  font-family: "Poppins", sans-serif;
+}
+.best-services-stack .best-services-stack-card:nth-child(2) {
+  box-shadow: -6px 5px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .stack {
+    display: grid;
+  }
+  .stack-card {
+    margin-top: 25px;
+  }
+}
+/* Esat ALbayrak/ FavoriteResorts */
+
+.favourite-resorts-item:nth-child(2) {
+  margin: 40px 0 40px 0;
+}
+.resorts-value-img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.favourite-resorts-h2 {
+  font-size: 40px;
+  max-width: 350px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.favourite-resorts-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.homepage-favourite-resorts {
+  padding: 50px 0;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.favourite-resorts-text {
+  display: grid;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .book-trip {
+    display: none;
+  }
+}
+
 /* Mert Homepage Europe Sightseeing Tours Section Start */
 .homepage-europe-container {
   position: relative;
@@ -444,20 +567,100 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /* Mert Homepage Europe Sightseeing Tours Section End */
 
-/* Esat Albayrak/PartnersSection */
-.partners-section-stack {
-  padding: 20px 0;
+/* EsatAlbayrak/TrendingTourPackages */
+.trend-tour-packages {
   display: flex;
   justify-content: center;
-  gap: 150px;
-  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
   flex-wrap: wrap;
+  gap: 150px;
 }
 
-.partners-section-stack img {
-  width: 150px;
-  filter: grayscale(100%);
-  mix-blend-mode: multiply;
+.Trending-title {
+  text-align: center;
+  gap: 20px;
+  padding: 50px 0;
+}
+
+#trending-title-h4 {
+  color: rgba(223, 105, 81, 1);
+  font-family: "Poppins", sans-serif;
+}
+
+#trending-title-h2 {
+  font-family: "Volkhov", serif;
+}
+.trend-tour-group-one {
+  max-width: 400px;
+  display: grid;
+}
+#swiss-flag {
+  position: absolute;
+  left: 10%;
+  bottom: -20%;
+}
+.swis-caption {
+  align-items: center;
+  gap: 70px;
+  padding: 40px 10px 0 10px;
+}
+#country {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 10px;
+  font-family: "Poppins", sans-serif;
+  font-family: "Volkhov", serif;
+}
+
+#country h2 {
+  font-weight: bold;
+}
+
+.swis-caption,
+#visitor-div {
+  color: rgba(125, 125, 125, 1);
+}
+.tour-info {
+  padding: 10px 0 0 10px;
+}
+.packages-local {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgba(125, 125, 125, 1);
+}
+.tour-price {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 5px;
+}
+
+.tour-explanation {
+  padding: 0 15px 0 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+}
+.search-button {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(223, 105, 81, 1);
+  width: fit-content;
+  border-radius: 10px;
+  margin: 10px 0 0 10px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.Trending-Tour-Packages-Div {
+  max-width: 1500px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.tour-img-div {
+  position: relative;
 }
 /* Esat Albayrak */
 .testiminoalis-section {

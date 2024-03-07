@@ -407,6 +407,44 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 25px;
   }
 }
+/* Esat ALbayrak/ FavoriteResorts */
+
+.favourite-resorts-item:nth-child(2) {
+  margin: 40px 0 40px 0;
+}
+.resorts-value-img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.favourite-resorts-h2 {
+  font-size: 40px;
+  max-width: 350px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.favourite-resorts-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.homepage-favourite-resorts {
+  padding: 50px 0;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.favourite-resorts-text {
+  display: grid;
+  align-items: center;
+}
+
+@media screen and (max-width: 375px) {
+  .book-trip {
+    display: none;
+  }
+}
 
 /* Mert Homepage Europe Sightseeing Tours Section Start */
 .homepage-europe-container {

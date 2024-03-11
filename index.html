@@ -6,47 +6,711 @@
     <title>Tour and Travel</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/shared.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fe33380c70.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <!--Kartal Explore Section Start-->
-    <div class="explore-section">
-      <div class="nature">
-        <img src="images/homepage-explore1.png" alt="" class="explore-img" width="100%">
-        <img src="images/explore-section-line-img01.png" alt="line" class="explore-line">
-         <div class="promotion-texts">
-          <h3>Promotion</h3>
-          <h2>Explore Nature</h2>
-          <button class="promotion-button">View Packages</button>
-         </div>
+    <!-- Mert Hero Section Start -->
+    <main class="home-wrapper">
+      <header class="header-container">
+        <div>
+          <a href=""
+            ><img src="./images/logo.png" alt="logo" class="logo-img"
+          /></a>
+        </div>
+        <ul class="navigation-list">
+          <li class="navigation-list-home navigation-list-hover">
+            <a href="">Home</a>
+          </li>
+          <li class="navigation-list-hover"><a href="">About</a></li>+
+          <li class="header-dropdown navigation-list-hover">
+            <a href="">Services <i class="bi bi-caret-down-fill"></i></a>
+            <div class="header-dropdown-content">
+              <a href="">Honeymoon Packages</a>
+              <a href="">Tours Packages</a>
+              <a href="">Musical Events</a>
+              <a href="">Build Package</a>
+            </div>
+          </li>
+          <li class="navigation-list-hover">
+            <a href="">Upcoming Packages</a>
+          </li>
+        </ul>
+        <!-- Mert Theme Switcher Start -->
+        <button id="theme-toggle" class="main-theme-switcher">
+          <span class="moon-icon"><i class="fa fa-moon"></i></span>
+          <span class="sun-icon"><i class="fa fa-sun"></i></span>
+        </button>
+        <script src="script.js"></script>
+        <!-- Mert Theme Switcher End -->
+        <button class="header-button">Get in Touch</button>
+      </header>
+      <section class="home-main-section">
+        <div>
+          <img src="./images/Vector-1.png" alt="" />
+        </div>
+        <div class="home-main-section-text">
+          <h1>No matter where you’re going to, we’ll take you there</h1>
+        </div>
+        <div class="main-menu">
+          <div>
+            <input
+              type="text"
+              class="main-menu-input"
+              placeholder="Where to?"
+            />
+          </div>
+          <div class="add-chevron travel-type">
+            <select name="travel-type" id="travel-type-select">
+              <option value="" disabled selected>Travel Type</option>
+              <option value="flight">Flight</option>
+              <option value="train">Train</option>
+              <option value="bus">Bus</option>
+              <option value="car">Car</option>
+              <option value="cruise">Cruise</option>
+              <option value="bicycle">Bicycle</option>
+            </select>
+          </div>
+          <div class="add-chevron">
+            <input
+              name="travel-type"
+              class="travel-input"
+              placeholder="Duration"
+              type="text"
+              onfocus="(this.type='date')"
+              onblur="(this.type='text')"
+              id="date"
+            />
+          </div>
+          <input
+            type="submit"
+            class="home-main-section-text-btn"
+            value="Submit"
+          />
+        </div>
+        <div class="people-booked-container">
+          <div class="people-booked-img-container">
+            <img src="./images/user-avatar2.png" alt="" />
+            <img
+              src="./images/user-avatar3.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar4.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar1.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar5.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar6.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <img
+              src="./images/user-avatar-emty.png"
+              alt=""
+              class="people-booked-img"
+            />
+            <i class="bi bi-plus"></i>
+          </div>
+          <p class="people-booked-container-desc">
+            2,500 people booked Tommorowland Event in last 24 hours
+          </p>
+        </div>
+      </section>
+      <div class="slider">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="128"
+          height="2"
+          viewBox="0 0 128 2"
+          fill="none"
+        >
+          <rect
+            x="48.25"
+            y="0.0234375"
+            width="31.25"
+            height="1.95312"
+            rx="0.976562"
+            fill="#DF6951"
+          />
+          <rect
+            x="96.5"
+            y="0.0234375"
+            width="31.25"
+            height="1.95312"
+            rx="0.976562"
+            fill="white"
+          />
+          <rect
+            y="0.0234375"
+            width="31.25"
+            height="1.95312"
+            rx="0.976562"
+            fill="white"
+          />
+        </svg>
       </div>
-      <div class="cities">
-        <img src="images/homepage-explore2.png" alt="" class="explore-img" width="100%">
-        <img src="images/explore-section-line-img02.png" alt="line" class="explore-line">
-         <div class="promotion-texts">
-          <h3>Promotion</h3>
-          <h2>Explore Cities</h2>
-          <button class="promotion-button">View Packages</button>
-         </div>
+      <div class="scrool-container">
+        <img src="./images/scroll.png" alt="" />
+      </div>
+    </main>
+    <!-- Mert Hero Section End -->
+    <!--Esat Albayrak/PartnersSection-->
+    <div class="partners-section-stack">
+      <div class="us-partner">
+        <img src="images/partner-logo1.png" alt="" />
+      </div>
+      <div class="us-partner">
+        <img src="images/partner-logo2.png" alt="" />
+      </div>
+      <div class="us-partner">
+        <img src="images/partner-logo3.png" alt="" />
+      </div>
+      <div class="us-partner">
+        <img src="images/partner-logo4.png" alt="" />
+      </div>
+      <div class="us-partner">
+        <img src="images/partners-logo5.png" alt="" />
       </div>
     </div>
-    <!--Kartal Explore Section Start-->
-  </body>    
+    <!--Esat ALBAYRAK/Bestservices-->
+    <article>
+      <h3 class="services-caption-h3">CATEGORY</h3>
+
+      <h1 class="services-caption-h1">WE OFFER BEST SERVİCES</h1>
+
+      <div class="best-services-stack">
+        <div class="best-services-stack-card">
+          <img
+            src="./images/homepage-services-human.png"
+            alt=""
+            class="best-services-card-img"
+          />
+          <h3>GUİDED TOURS</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+            accusantium?
+          </p>
+        </div>
+        <div class="best-services-stack-card">
+          <img src="./images/homepage-services-plane.png" alt="" class="s1" />
+          <h4>BEST FLİGHTS OPTİONS</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, natus.
+          </p>
+        </div>
+        <div class="best-services-stack-card">
+          <img src="./images/homepage-services-hands.png" alt="" class="s1" />
+          <h4>BEST FLİGHTS OPTİONS</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, natus.
+          </p>
+        </div>
+        <div class="best-services-stack-card">
+          <img src="./images/homepage-services-medical.png" alt="" class="s1" />
+          <h4>BEST FLİGHTS OPTİONS</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, natus.
+          </p>
+        </div>
+      </div>
+    </article>
+    <!-- Kartal Honeymoon Specials Section Start -->
+    <div class="honeymoon-main">
+      <img src="images/Illustration.png" alt="picture" />
+      <div class="honeymoon-text-box">
+        <h3 class="honeymoon-subtitle">HONEYMOON SPECIALS</h3>
+        <h2 class="honeymoon-title">Our Romantic Tropical Destinations</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          corporis cum nemo officiis iste amet, fuga quia sit dolor architecto,
+          ratione consectetur? Tempora numquam aperiam eaque, quam magnam
+          distinctio? Voluptatum alias minus, saepe natus neque eaque recusandae
+          dolores eos animi!
+        </p>
+        <button class="honeymoon-button">View Packages</button>
+      </div>
+    </div>
+    <!--Kartal Honeymoon Specials Section End -->
+    <!--Esat Albayrak/FavoriteResorts-->
+    <article class="homepage-favourite-resorts">
+      <div class="favourite-resorts-div">
+        <div class="resorts-bookings">
+          <h6 style="font-size: 20px; color: rgba(223, 105, 81, 1)">
+            Fast & Easy
+          </h6>
+          <br />
+          <h2 class="favourite-resorts-h2">
+            Get Your Favourite Resort Bookings
+          </h2>
+          <br />
+          <ul>
+            <li style="display: flex" class="favourite-resorts-list-item">
+              <img src="./images/value-image-1.png" class="resorts-value-img" />
+              <div class="favourite-resorts-text">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati, at.
+                </p>
+              </div>
+            </li>
+            <li style="display: flex" class="favourite-resorts-item">
+              <img src="./images/value-image-2.png" class="resorts-value-img" />
+              <div class="favourite-resorts-text">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati, at.
+                </p>
+              </div>
+            </li>
+            <li style="display: flex" class="favourite-resorts-list-item">
+              <img src="./images/value-image-3.png" class="resorts-value-img" />
+              <div class="favourite-resorts-text">
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati, at.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="./images/book-trip-img.png" class="book-trip" />
+        </div>
+      </div>
+    </article>
+    <!-- Mert Homepage Europe Sightseeing Tours Section Start -->
+    <section class="homepage-europe-container">
+      <div class="homepage-europe-text-box">
+        <h3>PROMOTION</h3>
+        <h6>We Provide You Best Europe Sightseeing Tours</h6>
+        <p>
+          Et labore harum non nobis ipsum eum molestias mollitia et corporis
+          praesentium a laudantium internos. Non quis eius quo eligendi corrupti
+          et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus
+          illum aut optio quibusdam!
+        </p>
+        <button class="homepage-europe-text-button">View Packages</button>
+      </div>
+      <div class="homepage-europe-img-container">
+        <div class="homepage-europe-img-box">
+          <img
+            src="./images/europe-section1.jpg"
+            alt=""
+            class="homepage-europe-img"
+          />
+          <button class="homepage-europe-price-button">$800</button>
+        </div>
+        <div class="homepage-europe-img-box">
+          <img
+            src="./images/europe-section2.jpg"
+            alt=""
+            class="homepage-europe-img"
+          />
+          <button class="homepage-europe-price-button">$800</button>
+        </div>
+        <div class="homepage-europe-img-box">
+          <img
+            src="./images/europe-section3.jpg"
+            alt=""
+            class="homepage-europe-img"
+          />
+          <button class="homepage-europe-price-button">$500</button>
+        </div>
+        <div class="homepage-europe-img-box">
+          <img
+            src="./images/europe-section4.jpg"
+            alt=""
+            class="homepage-europe-img"
+          />
+          <button class="homepage-europe-price-button">$400</button>
+        </div>
+      </div>
+      <img
+        src="./images/europe-section5.png"
+        alt=""
+        class="homepage-europe-big-img"
+      />
+    </section>
+       <!-- Kartal Honeymoon Specials Section Start -->
+       <div class="honeymoon-main">
+        <img src="images/Illustration.png" alt="picture" />
+        <div class="honeymoon-text-box">
+          <h3 class="honeymoon-subtitle">HONEYMOON SPECIALS</h3>
+          <h2 class="honeymoon-title">Our Romantic Tropical Destinations</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            corporis cum nemo officiis iste amet, fuga quia sit dolor architecto,
+            ratione consectetur? Tempora numquam aperiam eaque, quam magnam
+            distinctio? Voluptatum alias minus, saepe natus neque eaque recusandae
+            dolores eos animi!
+          </p>
+          <button class="honeymoon-button">View Packages</button>
+        </div>
+      </div>
+      <!--Kartal Honeymoon Specials Section End -->
+    <!--Esat Albayrak/TrendingTourPackages-->
+    <div class="Trending-Tour-Packages-Div">
+      <div class="Trending-title">
+        <h4 id="-trending-title-h4">TRENDY</h4>
+        <h2 id="trending-title-h2">Our Trending Tour Packages</h2>
+      </div>
+
+      <div class="trend-tour-packages">
+        <div class="trend-tour-group-one">
+          <div class="tour-img-div">
+            <img
+              src="./images/hometour-packages-switzerland.png"
+              alt="switzerland"
+            />
+            <img src="./images/swiss-flag.png" id="swiss-flag" />
+          </div>
+          <div class="swis-caption" style="display: flex">
+            <div
+              id="calender-div"
+              style="display: flex; align-items: center; gap: 5px"
+            >
+              <img
+                src="./images/hometour-packages-calender-icon.png"
+                id="calender"
+              />
+              <p>8 days</p>
+            </div>
+
+            <div
+              id="visitor-div"
+              style="display: flex; align-items: center; gap: 5px"
+            >
+              <img
+                src="./images/hometour-packages-user-icon.png"
+                id="packages-icon"
+              />
+              <p>25 people going</p>
+            </div>
+          </div>
+          <div id="country">
+            <h2>Switzerland</h2>
+            <div class="star-vote">
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+            </div>
+          </div>
+          <div class="tour-info">
+            <div class="packages-local">
+              <img src="./images/hometour-packages-location-icon.png" alt="" />
+              <p>Europe</p>
+            </div>
+            <div class="tour-price">
+              <p
+                style="
+                  font-weight: bold;
+                  color: rgba(223, 105, 81, 1);
+                  font-size: x-large;
+                "
+              >
+                1,000 $
+              </p>
+              <p style="color: rgba(125, 125, 125, 1)"><s>1,250 $</s></p>
+            </div>
+          </div>
+          <p class="tour-explanation">
+            Nam exercitationem commodi et ducimus quia in dolore animi sit
+            mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum
+            molestias mollitia et corporis praesentium a laudantium internos.
+          </p>
+          <a href="#" class="search-button">Explore now</a>
+        </div>
+
+        <div class="trend-tour-group-one">
+          <div class="tour-img-div">
+            <img
+              src="./images/hometour-packages-brazil.png"
+              alt="switzerland"
+            />
+            <img src="./images/brazil-flag.png" id="swiss-flag" />
+          </div>
+
+          <div class="swis-caption" style="display: flex">
+            <div
+              id="calender-div"
+              style="display: flex; align-items: center; gap: 5px"
+            >
+              <img
+                src="./images/hometour-packages-calender-icon.png"
+                id="calender"
+              />
+              <p>8 days</p>
+            </div>
+
+            <div
+              id="visitor-div"
+              style="display: flex; align-items: center; gap: 5px"
+            >
+              <img
+                src="./images/hometour-packages-user-icon.png"
+                id="packages-icon"
+              />
+              <p>30 people going</p>
+            </div>
+          </div>
+          <div id="country">
+            <h2>Amazon</h2>
+            <div class="star-vote">
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+            </div>
+          </div>
+          <div class="tour-info">
+            <div class="packages-local">
+              <img src="./images/hometour-packages-location-icon.png" alt="" />
+              <p>Brazil</p>
+            </div>
+            <div class="tour-price">
+              <p
+                style="
+                  font-weight: bold;
+                  color: rgba(223, 105, 81, 1);
+                  font-size: x-large;
+                "
+              >
+                1,223 $
+              </p>
+              <p style="color: rgba(125, 125, 125, 1)"><s>1,200 $</s></p>
+            </div>
+          </div>
+          <p class="tour-explanation">
+            Nam exercitationem commodi et ducimus quia in dolore animi sit
+            mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum
+            molestias mollitia et corporis praesentium a laudantium internos.
+          </p>
+          <a href="#" class="search-button">Explore now</a>
+        </div>
+
+        <div class="trend-tour-group-one">
+          <div class="tour-img-div">
+            <img src="./images/hometour-packages-eygpt.png" alt="switzerland" />
+            <img src="./images/egypt-flag.png" id="swiss-flag" />
+          </div>
+          <div class="swis-caption" style="display: flex">
+            <div
+              id="calender-div"
+              style="display: flex; align-items: center; gap: 5px"
+            >
+              <img
+                src="./images/hometour-packages-calender-icon.png"
+                id="calender"
+              />
+              <p>8 days</p>
+            </div>
+
+            <div
+              id="visitor-div"
+              style="display: flex; align-items: center; gap: 5px"
+            >
+              <img
+                src="./images/hometour-packages-user-icon.png"
+                id="packages-icon"
+              />
+              <p>155 people going</p>
+            </div>
+          </div>
+          <div id="country">
+            <h2>Giza</h2>
+            <div class="star-vote">
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+              <img src="./images/hometour-packages-star-img.png" alt="" />
+            </div>
+          </div>
+          <div class="tour-info">
+            <div class="packages-local">
+              <img src="./images/hometour-packages-location-icon.png" alt="" />
+              <p>Egypt</p>
+            </div>
+            <div class="tour-price">
+              <p
+                style="
+                  font-weight: bold;
+                  color: rgba(223, 105, 81, 1);
+                  font-size: x-large;
+                "
+              >
+                1,200 $
+              </p>
+              <p style="color: rgba(125, 125, 125, 1)"><s>1,200 $</s></p>
+            </div>
+          </div>
+          <p class="tour-explanation">
+            Nam exercitationem commodi et ducimus quia in dolore animi sit
+            mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum
+            molestias mollitia et corporis praesentium a laudantium internos.
+          </p>
+          <a href="#" class="search-button">Explore now</a>
+        </div>
+      </div>
+    </div>
+    <!-- Mert Homepage Europe Sightseeing Tours Section End -->
+    <!--Esat Albayrak-->
+    <div class="testimonials-container">
+      <div class="testiminoalis-section">
+        <div class="testiminoalis-title">
+          <h5 class="testiminoalis-title-h5">Promotion</h5>
+          <h2 class="testiminoalis-title-h2">
+            See What Our Clients Say <br />
+            About Us
+          </h2>
+        </div>
+        <div class="testiminoalis-comment">
+          <img
+            src="/images/testimonial-section-box-pp-img.png"
+            class="box-pp-img"
+          />
+          <img src="/images/arrow-leeft-icon.png" class="comment-arrow-left" />
+          <div class="comment-text">
+            <img src="/images/testimonial-box-quotes.png" class="box-quotes" />
+            <p class="testiminoalis-comment-p" style="text-align: center">
+              Vel officiis dolor ea illo aut eligendi ullam non laudantium
+              magnam et recusandae molestiae sit iure unde aut voluptate
+              quaerat. Id sunt provident quo possimus impedit vel doloremque
+              obcaecati qui ullam consectetur et ipsum omnis.
+            </p>
+            <h6>Christine Beckam - Designer</h6>
+          </div>
+          <img src="/images/arrow-right-icon.png" class="comment-arrow-right" />
+        </div>
+        <img
+          src="/images/testimonial-section-hat-img.png"
+          class="section-hat"
+        />
+        <img
+          src="/images/testimonial-section-photo-img.png"
+          class="section-photo"
+        />
+        <img
+          src="/images/testimonial-section-seashell-img.png"
+          class="testimonial-section-seashell"
+        />
+      </div>
+    </div>
+    <!--Esat Albayrak end-->
+
+    <div class="footerMainDiv">
+      <footer class="homepageFooter">
+        <div class="footerFirstColon">
+          <img src="images/logo_3.png" alt="" class="footerFirstColonImage" />
+          <p class="footerText">
+            Travel helps companies <br />
+            manage payments easily.
+          </p>
+
+          <div class="footerIcons">
+            <a href="https://tr.linkedin.com/ " target="_blank"
+              ><i class="fa-brands fa-linkedin" style="color: #ff8800"></i
+            ></a>
+            <a href="https://tr-tr.facebook.com/  target=" _blank
+              ><i
+                class="fa-brands fa-facebook-messenger"
+                style="color: #ff8800"
+              ></i
+            ></a>
+            <a href="https://twitter.com/" target="_blank"
+              ><i class="fa-brands fa-twitter" style="color: #ff8800"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-solid fa-infinity" style="color: #ff8800"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footerSecondColon">
+          <ul>
+            <a href="#" class="footerSecondColonText footerColonTextHeader"
+              ><li>Company</li></a
+            >
+            <a href="#" class="footerSecondColonText"><li>About Us</li></a>
+            <a href="#" class="footerSecondColonText"><li>Careers</li></a>
+            <a href="#" class="footerSecondColonText"><li>Blog</li></a>
+            <a href="#" class="footerSecondColonText"><li>Pricing</li></a>
+          </ul>
+        </div>
+        <div class="footerThirdColon">
+          <ul>
+            <a href="#" class="footerThirdColonText footerColonTextHeader">
+              <li>Destinations</li></a
+            >
+            <a href="#" class="footerThirdColonText"><li>Maldives</li></a>
+            <a href="#" class="footerThirdColonText"><li>Los Angeles</li></a>
+            <a href="#" class="footerThirdColonText"><li>Las Vegas</li></a>
+            <a href="#" class="footerThirdColonText"><li>Toronto</li></a>
+          </ul>
+        </div>
+        <div class="footerFourthColon">
+          <h2 class="FooterSecondHead">Join Our Newsletter</h2>
+          <input
+            type="text"
+            placeholder="Your email address"
+            class="footerInput"
+          />
+          <button class="subscribeButton">Subscribe</button>
+          <p class="footerFourthColonText">
+            * Will send you weekly updates for your better tour packages.
+          </p>
+        </div>
+        <div class="footerFifthColon">
+          <img
+            src="images/Footer_img_3.png"
+            alt=""
+            class="footerLastColonImage"
+          />
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
+

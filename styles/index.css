@@ -771,3 +771,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
   }
 }
+
+.honeymoon-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  flex-wrap: wrap;
+}
+
+.honeymoon-text-box {
+  max-width: 530px;
+}
+
+.honeymoon-subtitle {
+  color: #df6951;
+}
+
+.honeymoon-title {
+  font-size: 40px;
+  color: #181e4b;
+  margin: 15px 0px;
+}
+
+.honeymoon-button {
+  border-radius: 10px;
+  height: 40px;
+  width: 130px;
+  background-color: #df6951;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin-top: 30px;
+}

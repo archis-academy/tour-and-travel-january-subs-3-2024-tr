@@ -1,3 +1,55 @@
+.explore-section{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
+}
+
+.explore-line{
+    transform: translate(-50% , -50%);
+    position: absolute;
+    top: 54%;
+    left: 63%;
+}
+
+.nature,
+.cities{
+    position: relative;
+    width: 100%;
+    flex: 1;
+}
+
+.promotion-texts{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 1000;
+}
+
+.promotion-texts h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: "Volkhov", serif;
+}
+
+.promotion-texts h3{
+    font-size: 18px;
+    color: #FFEFEC;
+}
+
+.promotion-button{
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+}
 /* Mert Hero Section Start*/
 :root {
   --bg-color: #df6951;
